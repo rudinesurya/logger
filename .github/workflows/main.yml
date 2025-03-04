@@ -28,4 +28,4 @@ jobs:
       - name: Publish to GitHub Packages
         uses: JS-DevTools/publish-gpr@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PACKAGES_TOKEN }}
