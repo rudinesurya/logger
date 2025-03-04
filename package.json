@@ -1,6 +1,6 @@
 {
   "name": "@rudinesurya/logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
