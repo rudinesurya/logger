@@ -1,7 +1,8 @@
 {
   "name": "@rudinesurya/logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
+  "main": "./src/logger.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
