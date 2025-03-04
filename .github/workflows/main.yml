@@ -17,15 +17,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          registry-url: 'https://npm.pkg.github.com'
 
       - name: Install Dependencies
         run: npm ci
 
       - name: Build Package (if applicable)
         run: npm run build
-        continue-on-error: true # Ignore error if there's no build step
+        continue-on-error: true  # Ignore if there's no build step
 
       - name: Publish to GitHub Packages
-        uses: JS-DevTools/publish-gpr@v2
-        with:
-          token: ${{ secrets.GH_PACKAGES_TOKEN }}
+        run: npm publish --registry=https://npm.pkg.github.com/
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
