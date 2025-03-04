@@ -1,7 +1,7 @@
 {
   "name": "@rudinesurya/logger",
-  "version": "1.0.2",
-  "main": "index.ts",
+  "version": "1.0.3",
+  "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -13,9 +13,5 @@
   "description": "",
   "dependencies": {
     "winston": "^3.17.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.9",
-    "typescript": "^5.8.2"
   }
 }
